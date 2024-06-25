@@ -5,6 +5,14 @@
 This repository illustrates how a web component package as a NPM Package can be used.
 Refer to the [Web.Component](https://github.com/scalable-software/web.component) for comprehensive documentation on how to create a web component package.
 
+## Install NPM Package
+
+1. The following command installs the NPM package references above:
+
+```bash
+npm install "@scalablel.software/web.component" --save
+```
+
 ## Dependency References needed
 
 ### Importmaps
