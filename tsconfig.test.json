@@ -6,9 +6,6 @@
     "sourceMap": true,
     "inlineSources": true,
     "baseUrl": "./",
-    "paths": {
-      "@scalable.software/web.component": ["./src/Index.js"]
-    },
     "declaration": false
   },
   "include": ["./src/**/*", "./test/unit/**/*"],

@@ -1,11 +1,12 @@
 module.exports = function (wallaby) {
   return {
     files: [
-      "src/*.css",
-      "src/*.html",
       "importmap/inject.js",
       "importmap/importmap.test.js",
       "src/**/*.ts",
+      "node_modules/@scalable.software/**/dist/*.js",
+      "node_modules/@scalable.software/**/dist/*.css",
+      "node_modules/@scalable.software/**/dist/*.html",
     ],
     tests: ["test/unit/**/*.ts"],
     trace: true,
@@ -16,9 +17,6 @@ module.exports = function (wallaby) {
         sourceMap: true,
         inlineSources: true,
         baseUrl: "./",
-        paths: {
-          pin: ["./src/Pin.js"],
-        },
       }),
     },
   };

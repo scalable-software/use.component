@@ -6,13 +6,22 @@ module.exports = function (config) {
     proxies: {
       "/src/": "/base/src/",
       "/test/": "/base/test/unit/",
+      "/node_modules/": "/base/node_modules/",
     },
     files: [
-      { pattern: "./src/*.css" },
-      { pattern: "./src/*.html" },
       { pattern: "./importmap/inject.js" },
       { pattern: "./importmap/importmap.test.js" },
       { pattern: "./src/**/*.js", type: "module" },
+      {
+        pattern: "./node_modules/@scalable.software/**/dist/*.css",
+      },
+      {
+        pattern: "./node_modules/@scalable.software/**/dist/*.html",
+      },
+      {
+        pattern: "./node_modules/@scalable.software/**/dist/*.js",
+        type: "module",
+      },
       { pattern: "./test/unit/**/*.js", type: "module" },
     ],
     preprocessors: {

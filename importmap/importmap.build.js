@@ -6,7 +6,8 @@
 inject(
   {
     imports: {
-      "@scalable.software/web.component": "../dist/Index.js",
+      "@scalable.software/web.component":
+        "../node_modules/@scalable.software/web.component/dist/Index.js",
     },
   },
   "importmap"

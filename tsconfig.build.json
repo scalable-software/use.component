@@ -6,10 +6,7 @@
     "declaration": true,
     "rootDir": "./src",
     "outDir": "./dist/",
-    "baseUrl": "./",
-    "paths": {
-      "@scalable.software/web.component": ["./src/Index.js"]
-    }
+    "baseUrl": "./"
   },
   "include": ["./src/**/*"]
 }
