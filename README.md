@@ -10,7 +10,7 @@ Refer to the [Web.Component](https://github.com/scalable-software/web.component)
 1. The following command installs the NPM package references above:
 
 ```bash
-npm install "@scalablel.software/web.component" --save
+npm install "@scalable.software/web.component" --save
 ```
 
 ## Dependency References needed
